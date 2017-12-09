@@ -19,14 +19,6 @@ Each file is a step in the analysis of the 16,000+ comments regarding the Title 
 ### Modification
 
 The repository of files can be downloaded from github with the "Download as .zip" file above.
-After installing iPython/Jupyter the notebooks can be opened locally and modified tested on a local machine.
-
-#### Setup
-
-After installing the [required](#required) packages, in the repo root directory:
-1. Create a new virtualenv
-2. [Link a global Jupyter install to the virtualenv kernel](https://help.pythonanywhere.com/pages/IPythonNotebookVirtualenvs/)
-3. Activate the virtualenv and start the notebook with `jupyter notebook` 
 
 #### Required
 
@@ -34,9 +26,21 @@ After installing the [required](#required) packages, in the repo root directory:
 - Pip
 - Virtualenv
 
+#### Setup
+
+After installing the [required](#required) packages, set up the environment:
+(These commands can be copied into a terminal)
+
+``` python
+virtualenv env  #create a new virtualenv
+source env\bin\activate  #activate the virtualenv
+pip install -r requirements.txt  #install librarires
+jupyter notebook  #open a notebook
+```
+
 #### Libraries
 
-Libraries can be insalled using the `requirements.txt` file.
+Versions in the `requirements.txt` file.
 
 - [NumPy](http://www.numpy.org)
 - [SciPy](https://scipy.org)
