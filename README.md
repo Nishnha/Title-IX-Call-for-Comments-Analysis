@@ -33,7 +33,7 @@ After installing the [required](#required) packages, set up the environment:
 
 ``` python
 virtualenv env  #create a new virtualenv
-source env\bin\activate  #activate the virtualenv
+source env/bin/activate  #activate the virtualenv
 pip install -r requirements.txt  #install librarires
 jupyter notebook  #open a notebook
 ```
@@ -43,12 +43,9 @@ jupyter notebook  #open a notebook
 Versions in the `requirements.txt` file.
 
 - [NumPy](http://www.numpy.org)
-- [SciPy](https://scipy.org)
-- [scikit-learn](http://scikit-learn.org/stable/)
-- [matplotlib](http://matplotlib.org)
+- [Folium](http://python-visualization.github.io/folium/)
 - [pandas](http://pandas.pydata.org)
-- [HDBSCAN](https://github.com/scikit-learn-contrib/hdbscan)
-- [spaCy](https://spacy.io/usage/)
+- [TextBlob](http://textblob.readthedocs.io/en/dev/)
 
 ### License
 
