@@ -46,6 +46,7 @@ Versions in the `requirements.txt` file.
 - [Folium](http://python-visualization.github.io/folium/)
 - [pandas](http://pandas.pydata.org)
 - [TextBlob](http://textblob.readthedocs.io/en/dev/)
+- [PDFMiner.six](https://github.com/pdfminer/pdfminer.six/wiki)
 
 ### License
 
