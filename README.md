@@ -9,16 +9,30 @@ This project is in conjunction with Honors College Assistant Dean Sarah Cook, Ph
 
 ### Data
 
-The data folder includes a csv file all comments scraped from the regulations.gov website with any exact duplicates removed.
+The data folder includes:
+- db.json: The original database exported from the couchDB instance where web scraping results were stored.
+- db2.json: A copy of db.json with the author's name, state, and zipcode extracted from the comment body and placed into their respective fields. Created by running `./extract_location.sh > db2.json`
+- db3.json: A copy of db2.json with exact duplicate copies of comments removed. (The script removes every other comment because the cloudDB instance held two copies of every comment next to each other.) Created by running `./remove_duplicates.sh`
+- comments_cleaned.json: Output of the Data Cleanup notebook.
+- comments_only_attachments.json: Output of the Download Attachments notebook. Contains only the 93 comments with attachments from comments_cleaned.json. The attachment text replaces the original comment body of the comment.
+- comments_with_attachments.json: Output of the Download Attachments notebook. Contains all 13236 comments from comments_cleaned.json but with the attachment text replacing the comment body for comments with an attachment.
+- comments_duplicates_removed.json: Output of the Meta Analysis notebook. Contains 3879 comments from comments_with_attachments.json where only one copy of duplicate or near-duplicate comments was kept and the remaining were dropped.
+- /attachments: A folder containing the 93 attachments downloaded in the Download Attachments notebook.
 
 ### What's Included
 
 Each .ipynb file can be viewed by clicking the link in the files directory above.
 Each file is a step in the analysis of the 16,000+ comments regarding the Title IX regression and includes an introduction and comments along with the code explaining each operation and its significance.
 
+#### Order of runnning the notebooks:
+1. Title IX Data Cleanup.ipynb
+2. Title IX Download Attachments.ipynb
+3. Title IX Meta Analysis.ipynb
+4. Title IX Sentiment Analysis.ipyn
+
 ### Modification
 
-The repository of files can be downloaded from github with the "Download as .zip" file above.
+The repository of files can be downloaded from GitHub with the "Download as .zip" file above.
 
 #### Required
 
