@@ -16,7 +16,7 @@ The data folder includes:
 - comments_cleaned.json: Output of the Data Cleanup notebook.
 - comments_only_attachments.json: Output of the Download Attachments notebook. Contains only the 93 comments with attachments from comments_cleaned.json. The attachment text replaces the original comment body of the comment.
 - comments_with_attachments.json: Output of the Download Attachments notebook. Contains all 13236 comments from comments_cleaned.json but with the attachment text replacing the comment body for comments with an attachment.
-- comments_duplicates_removed.json: Output of the Meta Analysis notebook. Contains 3879 comments from comments_with_attachments.json where only one copy of duplicate or near-duplicate comments was kept and the remaining were dropped.
+- comments_duplicates_removed.json: Output of the Meta Analysis notebook. Contains 2861 comments from comments_with_attachments.json where only one copy of duplicate or near-duplicate comments was kept and the remaining were dropped.
 - /attachments: A folder containing the 93 attachments downloaded in the Download Attachments notebook.
 
 ### What's Included
