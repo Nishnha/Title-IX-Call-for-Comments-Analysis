@@ -24,6 +24,12 @@ The data folder includes:
 Each .ipynb file can be viewed by clicking the link in the files directory above.
 Each file is a step in the analysis of the 16,000+ comments regarding the Title IX regression and includes an introduction and comments along with the code explaining each operation and its significance.
 
+### Data Collection
+
+The comments were scraped from the regulations.gov website using [webscraper.io]() and a sitemap similar to [this one](https://gist.github.com/Nishnha/20eeea5d7692771419d46351acc1bc5f).
+
+See [issue #1](https://github.com/Nishnha/TitleIX_Comments/issues/1) for more details.
+
 #### Order of runnning the notebooks:
 1. Title IX Data Cleanup.ipynb
 2. Title IX Download Attachments.ipynb
