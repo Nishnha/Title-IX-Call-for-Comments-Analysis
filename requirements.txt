@@ -48,7 +48,7 @@ pexpect==4.6.0
 pickleshare==0.7.4
 Pillow==5.2.0
 prompt-toolkit==2.0.4
-psutil==5.4.7
+psutil==5.6.6
 ptyprocess==0.6.0
 pycryptodome==3.6.6
 pycups==1.9.73
