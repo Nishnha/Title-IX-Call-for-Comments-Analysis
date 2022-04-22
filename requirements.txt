@@ -56,7 +56,7 @@ pycurl==7.43.0
 Pygments==2.2.0
 pygobject==3.20.0
 pyparsing==2.2.0
-PyPDF2==1.26.0
+PyPDF2==1.27.5
 python-apt==1.1.0b1+ubuntu0.16.4.1
 python-dateutil==2.7.3
 python-debian==0.1.33
